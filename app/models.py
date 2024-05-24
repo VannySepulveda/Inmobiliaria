@@ -8,6 +8,7 @@ class Usuario(AbstractUser):
     TIPO_USUARIO_CHOICES=[('arrendatario','Arrendatario'),
                           ('arrendador','Arrendador')]                        
     nombre = models.CharField(max_length=50, null=False, blank=False)
+    rut=models.CharField(max_length=11, null=False, blank=False)
     apellido = models.CharField(max_length=50, null=False, blank=False)
     direccion = models.CharField(max_length=50, null=True, blank=True)
     telefono = models.CharField(max_length=11, null=True, blank=True)
